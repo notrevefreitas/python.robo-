@@ -1,8 +1,8 @@
 import requests
-import jason 
+import json 
 
 
 requisicao = requests.get("https://economia.awesomeapi.com.br/json/all/:moedas")
-cotacao = jason.loads (requisicao.text)
+cotacao = json.loads (requisicao.text)
 
 print(cotacao)
